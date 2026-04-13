@@ -1,0 +1,146 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --bg-color: #f6f4ff;        /*main page background*/
+    --text-main: #1A1A2E;       /*heading,body text*/
+    --text-muted: #6B6B8A;      /*subtitle, about me paragraph*/
+    --primary-accent: #7C3AED;  /*buttons, links, skills pills, border, navbar logo*/
+    --accent-dark: #4C1D95;     /*Hover state on buttons*/
+    --accent-light: #EEEDFE;    /*hero section*/
+    --border-color: #AFA9EC;    /*Cards borders*/
+    --light-bgcolor: #dfdcfe;   /*Ligth back ground color*/
+    --line-color: #d2cefb;      /*Seperate Lines color*/
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    color: var(--primary-accent);
+    font-size: larger;
+    border-bottom: 2px solid var(--line-color);
+}
+
+#icon{
+    color: var(--primary-accent);
+    cursor: pointer;
+}
+
+#icon:hover{
+    color: var(--accent-dark);
+}
+
+img{
+    padding: 1.5px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.image-section{
+    border: 3px solid var(--primary-accent);
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 20px; */
+}
+
+.intro-section{
+    text-align: center;
+    background-color: var(--light-bgcolor);
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.greeting{
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+.main-name{
+    color: var(--text-main);
+    margin: 5px 0;
+    font-weight: 600;
+}
+
+.sub-title{
+    margin-top: 10px;
+    color: var(--primary-accent);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.intro-btns{
+    margin-top: 30px;
+    /* cursor: pointer; */
+}
+
+.link-btn{
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 60px;
+    font-size: medium;
+    padding: 14px 20px;
+    background-color: var(--primary-accent);
+    color: var(--accent-light);
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.link-btn:hover{
+    background-color: var(--accent-dark);
+    transform: translateY(-1.7px);
+}
+
+.link-btn:active{
+    transform: scale(0.97);
+}
+
+.about-section{
+    background-color: #eeedf6;
+    border-bottom: 1px solid var(--line-color);
+    /* text-align: center; */
+}
+
+.about-title{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding: 10px;
+    padding-top: 30px;
+    color: var(--primary-accent);
+    font-weight: 450;
+    letter-spacing: 3px;
+}
+
+.about-text{
+    max-width: 600px;
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+    padding: 10px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    color: var(--text-main);
+    margin: 0 auto;
+}
