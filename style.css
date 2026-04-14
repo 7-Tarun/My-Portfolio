@@ -6,7 +6,7 @@
 }
 
 :root {
-    --bg-color: #f6f4ff;        /*main page background*/
+    --verylight-bgcolor: #eeedf6;        /*very light back ground color*/
     --text-main: #1A1A2E;       /*heading,body text*/
     --text-muted: #6B6B8A;      /*subtitle, about me paragraph*/
     --primary-accent: #7C3AED;  /*buttons, links, skills pills, border, navbar logo*/
@@ -18,7 +18,7 @@
 }
 
 body{
-    background-color: var(--bg-color);
+    background-color: #f6f4ff;
 }
 
 html,
@@ -46,7 +46,7 @@ body {
     color: var(--accent-dark);
 }
 
-img{
+.intro-img{
     padding: 1.5px;
     height: 100%;
     width: 100%;
@@ -146,7 +146,7 @@ img{
 }
 
 .skills-section{
-    background-color: #eeedf6;
+    background-color: var(--verylight-bgcolor);
     border-bottom: 1px solid var(--line-color);
 }
 
@@ -181,4 +181,71 @@ img{
 .skill-pill i{
     margin-right: 6px;
     font-size: 1.2rem;
+}
+
+.projects-section{
+
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* border: 1px solid var(--border-color); */
+}
+
+.project-card{
+    padding: 15px;
+    margin: 25px;
+    border: 2px solid var(--border-color);
+    transition: 0.3s ease;
+    border-radius: 15px;
+    background-color: var(--verylight-bgcolor);
+}
+
+.project-card:hover{
+    transform: translateY(-3px);
+    border-color: var(--primary-accent);
+}
+
+.card-img{
+    height: 150px;
+    width: 100%;
+    /* border: 2px solid black; */
+    margin-bottom: 10px;
+}
+
+.project-img{
+    border-radius: 15px;
+    border: 1px solid var(--line-color);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-heading{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--text-main);
+    text-decoration: none;
+}
+
+.project-description{
+    padding-bottom: 10px;
+    font-weight: 400;
+    color: var(--text-muted);
+    font-family: 'Georgia', 'Cambria', serif;
+    margin-bottom: 10px;
+}
+
+.project-btn{
+    margin: 0 auto;
+    background-color: #1A1A2E;
+    color: white;
+    padding: 7px 20px;
+    border-radius: 60px;
+    text-decoration: none;
+}
+
+.project-btn{
+    
 }
