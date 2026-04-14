@@ -111,20 +111,20 @@ img{
 
 .link-btn:hover{
     background-color: var(--accent-dark);
-    transform: translateY(-1.7px);
+    transform: translateY(-1.8px);
 }
 
 .link-btn:active{
-    transform: scale(0.97);
+    transform: scale(0.96);
 }
 
 .about-section{
-    background-color: #eeedf6;
+    /* background-color: #eeedf6; */
     border-bottom: 1px solid var(--line-color);
     /* text-align: center; */
 }
 
-.about-title{
+.title{
     font-size: 1.3rem;
     text-transform: uppercase;
     padding: 10px;
@@ -141,6 +141,44 @@ img{
     padding: 10px;
     padding-left: 20px;
     padding-bottom: 30px;
-    color: var(--text-main);
+    color: #434356;
     margin: 0 auto;
+}
+
+.skills-section{
+    background-color: #eeedf6;
+    border-bottom: 1px solid var(--line-color);
+}
+
+.skills-container{
+    padding: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.skill-pill{
+    background-color: var(--light-bgcolor);
+    color: var(--accent-dark);
+    padding: 10px 20px;
+    border: 0.1px solid var(--border-color);
+    border-radius: 60px;
+    font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.skill-pill:hover{
+    transform: translateY(-3px);
+    border-color: var(--primary-accent);
+    color: var(--primary-accent);
+}
+
+.skill-pill i{
+    margin-right: 6px;
+    font-size: 1.2rem;
 }
