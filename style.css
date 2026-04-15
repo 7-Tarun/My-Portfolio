@@ -6,18 +6,18 @@
 }
 
 :root {
-    --verylight-bgcolor: #eeedf6;        /*very light back ground color*/
-    --text-main: #1A1A2E;       /*heading,body text*/
-    --text-muted: #6B6B8A;      /*subtitle, about me paragraph*/
-    --primary-accent: #7C3AED;  /*buttons, links, skills pills, border, navbar logo*/
-    --accent-dark: #4C1D95;     /*Hover state on buttons*/
-    --accent-light: #EEEDFE;    /*hero section*/
-    --border-color: #AFA9EC;    /*Cards borders*/
-    --light-bgcolor: #dfdcfe;   /*Ligth back ground color*/
-    --line-color: #d2cefb;      /*Seperate Lines color*/
+    --verylight-bgcolor: #eeedf6;   /*very light back ground color*/
+    --text-main: #1A1A2E;           /*heading,body text*/
+    --text-muted: #6B6B8A;          /*subtitle, about me paragraph*/
+    --primary-accent: #7C3AED;      /*buttons, links, skills pills, border, navbar logo*/
+    --accent-dark: #4C1D95;         /*Hover state on buttons*/
+    --accent-light: #EEEDFE;        /*hero section*/
+    --border-color: #AFA9EC;        /*Cards borders*/
+    --light-bgcolor: #dfdcfe;       /*Ligth back ground color*/
+    --line-color: #d2cefb;          /*Seperate Lines color*/
 }
 
-body{
+body {
     background-color: #f6f4ff;
 }
 
@@ -27,7 +27,7 @@ body {
     width: 100%;
 }
 
-#nav-bar{
+#nav-bar {
     display: flex;
     justify-content: space-between;
     padding: 15px;
@@ -37,16 +37,16 @@ body {
     border-bottom: 2px solid var(--line-color);
 }
 
-#icon{
+#icon {
     color: var(--primary-accent);
     cursor: pointer;
 }
 
-#icon:hover{
+#icon:hover {
     color: var(--accent-dark);
 }
 
-.intro-img{
+.intro-img {
     padding: 1.5px;
     height: 100%;
     width: 100%;
@@ -54,7 +54,7 @@ body {
     border-radius: 50%;
 }
 
-.image-section{
+.image-section {
     border: 3px solid var(--primary-accent);
     border-radius: 50%;
     height: 180px;
@@ -66,38 +66,38 @@ body {
     /* margin-top: 20px; */
 }
 
-.intro-section{
+.intro-section {
     text-align: center;
     background-color: var(--light-bgcolor);
     padding-top: 20px;
     padding-bottom: 40px;
 }
 
-.greeting{
+.greeting {
     color: var(--text-muted);
     font-size: 1.2rem;
     margin-top: 15px;
 }
 
-.main-name{
+.main-name {
     color: var(--text-main);
     margin: 5px 0;
     font-weight: 600;
 }
 
-.sub-title{
+.sub-title {
     margin-top: 10px;
     color: var(--primary-accent);
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-.intro-btns{
+.intro-btns {
     margin-top: 30px;
     /* cursor: pointer; */
 }
 
-.link-btn{
+.link-btn {
     display: inline-block;
     text-decoration: none;
     border-radius: 60px;
@@ -109,22 +109,22 @@ body {
     transition: 0.2s ease;
 }
 
-.link-btn:hover{
+.link-btn:hover {
     background-color: var(--accent-dark);
-    transform: translateY(-1.8px);
+    transform: translateY(-2px);
 }
 
-.link-btn:active{
+.link-btn:active {
     transform: scale(0.96);
 }
 
-.about-section{
+.about-section {
     /* background-color: #eeedf6; */
     border-bottom: 1px solid var(--line-color);
     /* text-align: center; */
 }
 
-.title{
+.title {
     font-size: 1.3rem;
     text-transform: uppercase;
     padding: 10px;
@@ -134,7 +134,7 @@ body {
     letter-spacing: 3px;
 }
 
-.about-text{
+.about-text {
     max-width: 600px;
     line-height: 1.7rem;
     font-size: 1.1rem;
@@ -145,12 +145,12 @@ body {
     margin: 0 auto;
 }
 
-.skills-section{
+.skills-section {
     background-color: var(--verylight-bgcolor);
     border-bottom: 1px solid var(--line-color);
 }
 
-.skills-container{
+.skills-container {
     padding: 10px;
     padding-bottom: 30px;
     display: flex;
@@ -161,91 +161,204 @@ body {
     margin: 0 auto;
 }
 
-.skill-pill{
+.skill-pill {
     background-color: var(--light-bgcolor);
     color: var(--accent-dark);
     padding: 10px 20px;
     border: 0.1px solid var(--border-color);
     border-radius: 60px;
     font-weight: 500;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     transition: 0.3s ease;
 }
 
-.skill-pill:hover{
+.skill-pill:hover {
     transform: translateY(-3px);
     border-color: var(--primary-accent);
     color: var(--primary-accent);
 }
 
-.skill-pill i{
+.skill-pill i {
     margin-right: 6px;
     font-size: 1.2rem;
 }
 
 .projects-section{
-
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--line-color);
 }
 
-.projects-container{
+.projects-container {
     display: grid;
     grid-template-columns: 1fr;
     /* border: 1px solid var(--border-color); */
 }
 
-.project-card{
+.project-card {
     padding: 15px;
     margin: 25px;
+    margin-bottom: 5px;
     border: 2px solid var(--border-color);
     transition: 0.3s ease;
     border-radius: 15px;
     background-color: var(--verylight-bgcolor);
 }
 
-.project-card:hover{
-    transform: translateY(-3px);
+.project-card:hover {
+    transform: translateY(-4px);
     border-color: var(--primary-accent);
 }
 
-.card-img{
-    height: 150px;
+.card-img {
+    height: 180px;
     width: 100%;
     /* border: 2px solid black; */
     margin-bottom: 10px;
 }
 
-.project-img{
+.project-img {
     border-radius: 15px;
     border: 1px solid var(--line-color);
+    background-color: var(--light-bgcolor);
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.project-heading{
+.project-heading {
     font-weight: bold;
     font-size: 1.2rem;
     color: var(--text-main);
     text-decoration: none;
 }
 
-.project-description{
+.project-description {
     padding-bottom: 10px;
     font-weight: 400;
     color: var(--text-muted);
     font-family: 'Georgia', 'Cambria', serif;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
-.project-btn{
-    margin: 0 auto;
-    background-color: #1A1A2E;
+.project-btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.primary-btn {
+    display: inline-block;
+    background-color: var(--primary-accent);
     color: white;
-    padding: 7px 20px;
+    padding: 8px 20px;
     border-radius: 60px;
     text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s ease;
+    font-size: 1.1rem;
 }
 
-.project-btn{
-    
+.primary-btn:hover {
+    background-color: var(--accent-dark);
+    transform: translateY(-1.5px);
+}
+
+.primary-btn:active {
+    transform: scale(0.96);
+}
+
+.secondary-btn {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--text-main);
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 60px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: 2px solid var(--text-muted);
+    transition: 0.2s ease;
+}
+
+.secondary-btn i {
+    margin-right: 3px;
+    font-size: 1.1rem;
+}
+
+.secondary-btn:hover {
+    border-color: var(--text-main);
+    transform: translateY(-1.5px);
+}
+
+.secondary-btn:active {
+    transform: scale(0.95);
+}
+
+.contact-section{
+    background-color: var(--verylight-bgcolor);
+    border-bottom: 1px solid var(--line-color);
+    padding-bottom: 40px;
+}
+
+.contact-name{
+    text-align: center;
+    color: var(--text-main);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.contact-description{
+    text-align: center;
+    max-width: 600px;
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+    padding: 10px;
+    padding: 0 20px;
+    padding-bottom: 30px;
+    color: #434356;
+    margin: 0 auto;
+}
+
+.contact-btns{
+    display: flex;
+    justify-content: center;
+}
+
+.social-links{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon{
+    border: 1.5px solid var(--border-color);
+    padding: 6px 13px;
+    border-radius: 15px;
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    transition: 0.3s ease;
+    background-color: var(-);
+}
+
+.social-icon:hover{
+    background-color: var(--accent-light);
+    color: var(--text-main);
+    transform: translateY(-3px);
+    border-color: var(--primary-accent);
+}
+
+.footer-section{
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--text-main);
+}
+
+.footer-p{
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-size: 0.95rem;
+    color: var(--light-bgcolor);
 }
