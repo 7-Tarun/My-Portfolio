@@ -3,6 +3,7 @@
     padding: 0%;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-tap-highlight-color: transparent;
 }
 
 :root {
@@ -21,10 +22,15 @@ body {
     background-color: #f6f4ff;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 html,
 body {
     height: 100%;
     width: 100%;
+    scrollbar-width: none;
 }
 
 #nav-bar {
