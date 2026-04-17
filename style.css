@@ -330,6 +330,11 @@ body {
     font-size: 1.2rem;
     color: var(--text-main);
     text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.project-heading:hover{
+    color: darkslateblue;
 }
 
 .project-description {
@@ -552,5 +557,103 @@ body {
         font-size: 1.4rem;
     }
 
+    .title{
+        padding-left: 20px;
+        font-size: x-large;
+        font-weight: 500;
+    }
+
+    .about-section{
+        padding: 70px 0;
+    }
+
+    .about-text{
+        max-width: 800px;
+        font-size: 1.3rem;
+        line-height: 1.8;
+        text-align: center;
+    }
+
+    .skills-section{
+        padding: 70px 0;
+    }
+
+    .skills-container{
+        max-width: 800px;
+        column-gap: 30px;
+        cursor: context-menu;
+    }
+
+    .skill-pill{
+        font-size: 1.2rem;
+        padding: 11px 22px;
+    }
+
+    .projects-section{
+        padding: 70px 0;
+    }
+
+    .projects-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    .card-img{
+        margin-bottom: 55px;
+    }
+
+    .project-img{
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .project-heading{
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+    }
+
+    .project-description{
+        line-height: 1.5;
+    }
+
+    .contact-section{
+        padding: 70px 0;
+        text-align: center;
+    }
+
+    #contact-title{
+        text-align: center;
+    }
+
+    .contact-description{
+        max-width: 600px;
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin: 20px auto 40px auto;
+    }
+
+    .contact-btns{
+        font-size: 1.2rem;
+        padding: 15px 40px;
+    }
+
+    .social-links{
+        margin-top: 40px;
+        gap: 30px;
+    }
+
+    .social-icon{
+        font-size: 1.8rem;
+    }
+
+    .footer-section{
+        padding: 25px 0;
+    }
+
+    .footer-p{
+        font-size: 1.1rem;
+    }
 
 }
