@@ -2,7 +2,7 @@ const menuIcon = document.querySelector('#icon');
 const mobileMenu = document.querySelector('.mobile-menu');
 const menuItem = document.querySelectorAll('.menu-item');
 
-menuIcon.addEventListener('click',() => {
+menuIcon.addEventListener('click', () => {
     mobileMenu.classList.toggle('active');
     menuIcon.classList.toggle('open');
     menuIcon.classList.toggle('fa-bars');
@@ -11,7 +11,7 @@ menuIcon.addEventListener('click',() => {
 });
 
 menuItem.forEach(link => {
-    link.addEventListener('click',() => {
+    link.addEventListener('click', () => {
         mobileMenu.classList.remove('active');
         menuIcon.classList.remove('open');
         menuIcon.classList.add('fa-bars');
@@ -24,11 +24,11 @@ menuItem.forEach(link => {
 const navBar = document.querySelector('#nav-bar');
 let lastScrollY = window.scrollY;
 
-window.addEventListener('scroll',() => {
-    if(window.scrollY > lastScrollY){
+window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY) {
         navBar.classList.add('nav-hidden');
     }
-    else{
+    else {
         navBar.classList.remove('nav-hidden');
     }
 
