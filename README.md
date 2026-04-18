@@ -59,7 +59,7 @@ No frameworks. No libraries. Just the basics — done right.
 If you want to talk frontend, give feedback on my work, or just say hi — I'm always open.
 
 - 🌐 [Portfolio](https://7-tarun.github.io/My-Portfolio/)
-- 💼 [LinkedIn](https://linkedin.com/in/your-linkedin)
+- 💼 [LinkedIn](https://www.linkedin.com/in/bat-man-30913633a)
 - 🐙 [GitHub](https://github.com/7-Tarun)
 
 ---
