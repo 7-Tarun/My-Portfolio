@@ -340,7 +340,19 @@ body {
     /* border: 1px solid var(--border-color); */
 }
 
+/* .project-card {
+    padding: 15px;
+    margin: 25px;
+    margin-bottom: 5px;
+    border: 2px solid var(--border-color);
+    transition: 0.3s ease;
+    border-radius: 15px;
+    background-color: var(--verylight-bgcolor);
+} */
+
 .project-card {
+    display: flex;
+    flex-direction: column;
     padding: 15px;
     margin: 25px;
     margin-bottom: 5px;
@@ -391,12 +403,21 @@ body {
     margin-bottom: 7px;
 }
 
+/* .project-btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+} */
+
 .project-btn {
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     gap: 15px;
+    margin-top: auto;
 }
 
 .primary-btn {
